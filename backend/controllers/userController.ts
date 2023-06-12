@@ -40,7 +40,11 @@ export async function login(req: Request, res: Response) {
       return res.status(404).json({ message: "email and password not found" });
     }
     const jwtToken = sign({id:user.id,name:user.name},process.env.JWT_SECRET);
-    res.cookie("token",jwtToken).json({name:user.name});
+    res.cookie("token",jwtToken,{
+      httpOnly:true,
+      sameSite:"strict",
+      secure:true
+    }).json({name:user.name});
   } catch (error) {
     res.status(500).json({message:error.message});
   }

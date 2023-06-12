@@ -333,8 +333,7 @@ const data = [
   },
 ];
 
-async function insertDummyData() {
-    await con();
+export async function insertDummyData() {
   try {
     await OEMSpecsModel.deleteMany({});
     await OEMSpecsModel.insertMany(data);
@@ -343,4 +342,3 @@ async function insertDummyData() {
     console.log(e.message);
   }
 }
-insertDummyData();

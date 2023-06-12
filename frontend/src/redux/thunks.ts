@@ -11,6 +11,7 @@ import {
 import { Cars, OEMSpecsType, SellerCarDetails } from "../type";
 
 const api_uri = process.env.REACT_APP_URL as string;
+axios.defaults.withCredentials=true;
 
 export const omeThunks = createAsyncThunk(
   CAR_THUNKS,
