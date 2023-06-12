@@ -1,0 +1,42 @@
+services:
+  - name: backend
+    buildCommand: npm run build
+    startCommand: npm start
+
+  - name: frontend
+    buildCommand: npm run build
+    startCommand: npm run serve
+
+routes:
+  - path: /api/(.*)
+    method: GET, POST, PUT, DELETE
+    destination: backend
+
+  - path: /upload/(.*)
+    method: GET, POST, PUT, DELETE
+    destination: backend
+
+  - path: /static/(.*)
+    destination: frontend/build/static/$1
+
+  - path: /favicon.ico
+    destination: frontend/build/favicon.ico
+
+  - path: /logo(.*)
+    destination: frontend/build/logo$1
+
+  - path: /asset-manifest.json
+    destination: frontend/build/asset-manifest.json
+
+  - path: /precache-manifest.(.*)
+    destination: frontend/build/precache-manifest.$1
+
+  - path: /manifest.json
+    destination: frontend/build/manifest.json
+
+  - path: /service-worker.js
+    method: GET
+    destination: frontend/build/service-worker.js
+
+  - path: /(.*)/
+    destination: frontend/build/index.html
