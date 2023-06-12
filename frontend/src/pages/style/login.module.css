@@ -3,7 +3,7 @@
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-image: url(https://images.pexels.com/photos/8753672/pexels-photo-8753672.jpeg?auto=compress&cs=tinysrgb&w=1600);
+    background-image: url(https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600);
     background-size: cover;
     justify-content: center;
     align-items: center;
@@ -30,7 +30,7 @@
     position: relative;
     max-width: 750px;
     width: 100%;
-    background-image: url(https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: url(https://images.unsplash.com/photo-1474015977340-64a93f54a9f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
