@@ -1,0 +1,9 @@
+export const CAR = "car"
+export const SEARCH = "search"
+export const USER = "user"
+export const CAR_THUNKS = `${CAR}/getOEM`;
+export const GET_CAR_THUNKS = `${CAR}/getCars`;
+export const ADD_CAR_THUNKS = `${CAR}/addCars`;
+export const DELETE_CAR_THUNKS = `${CAR}/removeCar`;
+export const UPDATE_CAR_THUNKS = `${CAR}/updateCar`;
+export const USER_LOGIN_THUNK = `${USER}/login`;

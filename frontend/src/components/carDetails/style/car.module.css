@@ -1,0 +1,47 @@
+.cars{
+    display: flex;
+}
+.car__title{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.car__img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.car__details{
+    margin-left: 20px;
+    width: 100%;
+}
+.car__details__content{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 15px;
+    color: var(--color-dark-black);
+}
+.delete__btn,.edit__btn{
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: var(--color-white);
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin: 20px 10px;
+    float: right;
+    cursor: pointer;
+}
+.edit__btn{
+    color: var(--color-dark-black);
+    background-color: transparent;
+    border: 1px solid var(--color-gray);
+    border-radius: 5px;
+}
+.delete__btn:hover,.edit__btn:hover{
+    opacity: 0.8;
+    transition: all ease-in-out 0.1s;
+}

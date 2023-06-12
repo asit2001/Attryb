@@ -1,0 +1,13 @@
+.omeDetails{
+    max-width: 700px;
+    margin: 10px auto;
+    padding: 0 10px;
+}
+.ome__details__content{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 15px;
+    color: var(--color-dark-black);
+    text-transform: capitalize;
+}
